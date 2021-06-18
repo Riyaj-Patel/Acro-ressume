@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/resumeFormat.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- FONT AWESOME -->
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+    <div class="main-container">
+        <div class="input-container" id="cv-form">
+            <h1 class="header"> Resume Generator </h1>
+            
+            <div class="form-container">
+                <div class="form-content">
+                    <!-- Personal Details Column 1 -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Personal Information</h2>
+
+                            <!--Name-->
+                            <div class="Form-group">
+                                <label class="label-content" for="namefield">Your Name</label>
+                                <input type="text" id="namefield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--father name-->
+                            <div class="Form-group">
+                                <label class="label-content" for="fathername">Father's Name</label>
+                                <input type="text" id="fatherfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--date of birth-->
+                            <div class="Form-group">
+                                <label class="label-content" for="dobfield">Date of Birth</label>
+                                <input type="date" id="dobfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--Gender-->
+                            <div class="Form-group">
+                                <label class="label-content" for="nationality">Gender</label>
+                                <div class="radio-button-content">
+                                    <input class="radio-button-gender" type="radio" id="male" name="gender"
+                                        value="male">
+                                    <label class="" for="male">Male</label><br>
+                                </div>
+                                <div class="radio-button-content">
+                                    <input class="radio-button-gender" type="radio" id="female" name="gender"
+                                        value="female">
+                                    <label class="" for="female">Female</label><br>
+                                </div>
+                                <div class="radio-button-content">
+                                    <input class="radio-button-gender" type="radio" id="other" name="gender"
+                                        value="other">
+                                    <label class="" for="other">Other</label>
+                                </div>
+                            </div>
+                            <!--address-->
+                            <div class="Form-group">
+                                <label class="label-content" for="addressfield">Address</label>
+                                <input type="text" id="addressfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Personal Details Column 2 -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Personal Information</h2>
+                            <!--languages-->
+                            <div class="Form-group">
+                                <label class="label-content" for="langfield">Languages Known</label>
+                                <input type="text" id="langfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--mother tongue-->
+                            <div class="Form-group">
+                                <label class="label-content" for="mothertongue">Mother's Tongue</label>
+                                <input type="text" id="motherfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--nationality-->
+                            <div class="Form-group">
+                                <label class="label-content" for="nationalityfield">Nationality</label>
+                                <input type="text" id="nationalityfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--marital status-->
+                            <div class="Form-group">
+                                <label class="label-content" for="maritalfield">Marital Status</label>
+                                <input type="text" id="maritalfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                            <!--passport-->
+                            <div class="Form-group">
+                                <label class="label-content" for="passportfield">Passport Details</label>
+                                <input type="text" id="passportfield" placeholder="Enter Here"
+                                    class="input-content" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contact-->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <div class="Form-group">
+                                <h3>Contact Information</h3>
+                                <div class="contact">
+                                    <!--phone number-->
+                                    <label class="label-content" for="phonefield">Phone Number</label>
+                                    <input type="text" id="phonefield" placeholder="Enter Here"
+                                        class="input-content" />
+                                </div>
+                                <!--email-->
+                                <div class="contact">
+                                    <label class="label-content" for="emailfield">Email Id</label>
+                                    <input type="email" id="emailfield" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <!--skype-->
+                                    <div class="contact">
+                                        <label class="label-content" for="skypefield">Skype Id</label>
+                                        <input type="text" id="skypefield" placeholder="Enter Here"
+                                            class="input-content" />
+                                    </div>
+                                    <!--linkedin-->
+                                    <div class="contact">
+                                        <label class="label-content" for="Linkedin">Linkedin Profile</label>
+                                        <input type="text" id="linkedfield" placeholder="Enter Full Profile URL"
+                                            class="input-content" />
+
+                                        <!--github-->
+                                        <label class="label-content" for="githubfield">Github Profile</label>
+                                        <input type="text" id="githubfield" placeholder="Enter Github Username"
+                                            class="input-content" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Academic Column 1-->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Academic Record</h2>
+                            <div class="Form-group">
+                                <h3>College Details</h3>
+                                <div class="college education">
+                                    <!--College-->
+                                    <label class="label-content" for="clgnamefield">Name</label>
+                                    <input type="text" id="clgnamefield" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="studyfield">Field of Study</label>
+                                    <input type="text" id="studyfield" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="scorefield">Percentage Scored</label>
+                                    <input type="text" id="scorefield" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="gradfield">Graduation Year</label>
+                                    <input type="text" id="gradfield" placeholder="for ex: 2018-22"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Academic Column 2-->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Academic Record</h2>
+                            <div class="Form-group">
+                                <h3>12th Details</h3>
+                                <div class="12education">
+                                    <!--12th class-->
+                                    <label class="label-content" for="sclnamefield_12">School Name</label>
+                                    <input type="text" id="sclnamefield_12" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="scorefield_12">Percentage Scored</label>
+                                    <input type="text" id="scorefield_12" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="gradfield_12">Completion Year</label>
+                                    <input type="text" id="gradfield_12" placeholder="Enter Here"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Academic Column 3-->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Academic Record</h2>
+                            <div class="Form-group">
+                                <h3>10th Details</h3>
+                                <div class="10education">
+                                    <!--10th class-->
+                                    <label class="label-content" for="sclnamefield_10">School Name</label>
+                                    <input type="text" id="sclnamefield_10" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="scorefield_10">Percentage Scored</label>
+                                    <input type="text" id="scorefield_10" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="gradfield_10">Completion Year</label>
+                                    <input type="text" id="gradfield_10" placeholder="Enter Here"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Internship Details -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Internship Details</h2>
+                            <div class="Form-group">
+                                <div class="experience">
+                                    <label class="label-content" for="titlefield1">Title/Position</label>
+                                    <input type="text" id="titlefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="cmpnamefield1">Company Name</label>
+                                    <input type="text" id="cmpnamefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="sdatefield1">Start Date</label>
+                                    <input type="date" id="sdatefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="edatefield1">End Date</label>
+                                    <input type="date" id="edatefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="detailfield1">Details</label>
+                                    <input type="text" id="detailfield1" placeholder="Achievements/Task/Responsibility "
+                                        class="input-content" />
+                                    <button class="button button5"  onclick="addInternship()">Add Internship</button>
+                                    <button class="button button5"  onclick="removeInternship()">Remove Internship</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training Details -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Training Details</h2>
+                            <div class="Form-group">
+                                <div class="training">
+                                    <label class="label-content" for="trn_coursefield1">Course Name</label>
+                                    <input type="text" id="trn_coursefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="trn_cmpnamefield1">Company Name</label>
+                                    <input type="text" id="trn_cmpnamefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="trn_sdatefield1">Start Date</label>
+                                    <input type="date" id="trn_sdatefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="trn_edatefield1">End Date</label>
+                                    <input type="date" id="trn_edatefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="trn_detailfield1">Details</label>
+                                    <input type="text" id="trn_detailfield1" placeholder="Achievements/Task/Responsibility "
+                                        class="input-content" />
+                                    <button class="button button5"  onclick="addTraining()">Add Training</button>
+                                    <button class="button button5"  onclick="removeTraining()">Remove Training</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Details -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Project Details</h2>
+                            <div class="Form-group">
+                                <div class="project">
+                                    <label class="label-content" for="projectfield1">Project Name</label>
+                                    <input type="text" id="projectfield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="pro_stdatefield1">Start Date</label>
+                                    <input type="date" id="pro_stdatefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="pro_eddatefield1">End Date</label>
+                                    <input type="date" id="pro_eddatefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                    <label class="label-content" for="pro_detailpfield1">Details</label>
+                                    <input type="text" id="pro_detailpfield1" placeholder="Achievements/Task/Responsibility "
+                                        class="input-content" />
+                                </div>
+                            </div>
+                            <button class="button button5"  onclick="addProject()">Add Project</button>
+                            <button class="button button5"  onclick="removeProject()">Remove Project</button>
+                        </div>
+                    </div>
+                    <!-- Other Details Column 1 -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Other Details</h2>
+                            <div class="Form-group">
+                                <label class="label-content" for="objfield">Career Objective</label>
+                                <textarea id="objfield" rows="2" placeholder="Enter Here"
+                                    class="input-content"></textarea>
+                            </div>
+                            <div class="Form-group">
+                                <div class="achievement">
+                                    <label class="label-content" for="achievefield1">Achievement 1</label>
+                                    <input type="text" id="achievefield1" placeholder="Enter Here"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                            <button class="button button5"  onclick="addAchievement(this)">Add Achievement</button>
+                        </div>
+                    </div>
+                    <!-- Other Details Column 2 -->
+                    <div class="slider-container">
+                        <div class="slider-content">
+                            <h2>Other Details</h2>
+                            <div class="Form-group">
+                                <label class="label-content" for="skillfield">Skills</label>
+                                <input type="text" id="skillfield" placeholder="Enter Comma Seperated Values"
+                                    class="input-content" />
+                            </div>
+                            <div class="Form-group">
+                                <div class="strength">
+                                    <!--strength-->
+                                    <label class="label-content" for="strengthfield">Strengths</label>
+                                    <input type="text" id="strengthfield" placeholder="Enter Comma Seperated Values"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                            <div class="Form-group">
+                                <div class="aoi">
+                                    <!--Area of improvement-->
+                                    <label class="label-content" for="aoifield">Area of Improvement</label>
+                                    <input type="text" id="aoifield" placeholder="Enter Comma Seperated Values"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                            <div class="Form-group">
+                                <div class="hobbies">
+                                    <!--Hobbies-->
+                                    <label class="label-content" for="hobbyfield">Hobbies</label>
+                                    <input type="text" id="hobbyfield" placeholder="Enter Comma Seperated Values"
+                                        class="input-content" />
+                                </div>
+                            </div>
+
+                            <div class="Form-group">
+                                <div class="references">
+                                    <!--References-->
+                                    <label class="label-content" for="referfield">References</label>
+                                    <input type="text" id="referfield" placeholder="Enter Comma Seperated Values"
+                                        class="input-content" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- generate button -->
+                        <button onclick="generator()">Generate</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-button-container">
+                <button class="button-back">Back</button>
+                <button class="button-next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-container"></div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!-- JSPDF CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    
+    <!-- HTML2CANVAS CDN -->
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+    <!-- Slider CDN -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/eventListners.js"></script>
+    <script type="text/javascript" src="./js/resumeFormat.js"></script>
+
+</body>
+
+</html>
