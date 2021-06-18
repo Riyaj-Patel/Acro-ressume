@@ -23,8 +23,10 @@ function addInternship(){
                                             <label class="label-content" for="detailfield${totalInternships+1}">Details</label>
                                             <input type="text" id="detailfield${totalInternships+1}" placeholder="Achievements/Task/Responsibility "
                                                 class="input-content" />
-                                            <button class="button button5"  onclick="addInternship()">Add Internship</button>
-                                            <button class="button button5"  onclick="removeInternship()">Remove Internship</button>
+                                            <div class="add-remove-container mt-3 mb-3">
+                                            <button class="button button5 add-button"  onclick="addInternship()">Add Internship</button>
+                                            <button class="button button5 remove-button"  onclick="removeInternship()">Remove Internship</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -57,8 +59,8 @@ function removeInternship(){
         let internshipHTML = `<div class="slider-container">
                                 <div class="slider-content">
                                     <h2>Internship</h2>
-                                    <div class="Form-group">
-                                        <button class="button button5" onclick="addInternship()">Add Internship</button>
+                                    <div class="Form-group add-remove-container mt-3 mb-3">
+                                        <button class="button button5 add-button" onclick="addInternship()">Add Internship</button>
                                     </div>
                                 </div>
                             </div>`;
@@ -95,8 +97,10 @@ function addTraining(){
                                             <label class="label-content" for="trn_detailfield${totalTrainings+1}">Details</label>
                                             <input type="text" id="trn_detailfield${totalTrainings+1}" placeholder="Achievements/Task/Responsibility "
                                                 class="input-content" />
-                                            <button class="button button5"  onclick="addTraining()">Add Training</button>
-                                            <button class="button button5"  onclick="removeTraining()">Remove Training</button>
+                                            <div class="add-remove-container mt-3 mb-3">
+                                            <button class="button button5 add-button"  onclick="addTraining()">Add Training</button>
+                                            <button class="button button5 remove-button"  onclick="removeTraining()">Remove Training</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -129,8 +133,8 @@ function removeTraining(){
         let trainingHTML = `<div class="slider-container">
                                 <div class="slider-content">
                                     <h2>Training</h2>
-                                    <div class="Form-group">
-                                        <button class="button button5" onclick="addTraining()">Add Training</button>
+                                    <div class="Form-group add-remove-container mt-3 mb-3">
+                                        <button class="button button5 add-button" onclick="addTraining()">Add Training</button>
                                     </div>
                                 </div>
                             </div>`;
@@ -166,8 +170,10 @@ function addProject(){
                                                 class="input-content" />
                                         </div>
                                     </div>
-                                    <button class="button button5"  onclick="addProject()">Add Project</button>
-                                    <button class="button button5"  onclick="removeProject()">Remove Project</button>
+                                    <div class="add-remove-container mt-3 mb-3"
+                                    <button class="button button5 add-button"  onclick="addProject()">Add Project</button>
+                                    <button class="button button5 remove-button"  onclick="removeProject()">Remove Project</button>
+                                    </div>
                                 </div>
                             </div>`;
                         $('.form-content').slick('slickAdd',projectHTML,currentSlide);        
@@ -198,8 +204,8 @@ function removeProject(){
         let projectHTML = `<div class="slider-container">
                                 <div class="slider-content">
                                     <h2>Project</h2>
-                                    <div class="Form-group">
-                                        <button class="button button5" onclick="addProject()">Add Project</button>
+                                    <div class="Form-group add-remove-container mt-3 mb-3">
+                                        <button class="button button5 add-button" onclick="addProject()">Add Project</button>
                                     </div>
                                 </div>
                             </div>`;
@@ -223,8 +229,11 @@ function addAchievement(el) {
                                                                     class="input-content" />
                         </div>
                     </div>
-                    <button class="button button5"  onclick="removeAchievement(this)">Remove</button>`);
-    }
+                    <div class="archi-container">
+                    <button class="button button5 archi-button"  onclick="removeAchievement(this)">Remove</button>
+                    </div>`);
+                    
+        }
     else{
         alert('You cannot enter more than 2 Projects.');
     }
@@ -570,8 +579,10 @@ function generator() {
 
             </div>
         </div>
-    <button onclick="CreatePDFfromHTML()">Download</button>
-    <button onclick="editForm()">Edit</button>`;
+    <div class="download-edit-container">
+    <button class="download-button" onclick="CreatePDFfromHTML()">Download</button>
+    <button class="edit-button" onclick="editForm()">Edit</button>
+    </div>`;
     
     $('.main-container').hide();
 

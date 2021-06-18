@@ -38,7 +38,7 @@
     <div class="main-container">
         <div class="input-container" id="cv-form">
             <h1 class="header"> Resume Generator </h1>
-            
+
             <div class="form-container">
                 <div class="form-content">
                     <!-- Personal Details Column 1 -->
@@ -49,20 +49,17 @@
                             <!--Name-->
                             <div class="Form-group">
                                 <label class="label-content" for="namefield">Your Name</label>
-                                <input type="text" id="namefield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="namefield" placeholder="Enter Here" class="input-content" />
                             </div>
                             <!--father name-->
                             <div class="Form-group">
                                 <label class="label-content" for="fathername">Father's Name</label>
-                                <input type="text" id="fatherfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="fatherfield" placeholder="Enter Here" class="input-content" />
                             </div>
                             <!--date of birth-->
                             <div class="Form-group">
                                 <label class="label-content" for="dobfield">Date of Birth</label>
-                                <input type="date" id="dobfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="date" id="dobfield" placeholder="Enter Here" class="input-content" />
                             </div>
                             <!--Gender-->
                             <div class="Form-group">
@@ -86,8 +83,7 @@
                             <!--address-->
                             <div class="Form-group">
                                 <label class="label-content" for="addressfield">Address</label>
-                                <input type="text" id="addressfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="addressfield" placeholder="Enter Here" class="input-content" />
                             </div>
                         </div>
                     </div>
@@ -98,14 +94,12 @@
                             <!--languages-->
                             <div class="Form-group">
                                 <label class="label-content" for="langfield">Languages Known</label>
-                                <input type="text" id="langfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="langfield" placeholder="Enter Here" class="input-content" />
                             </div>
                             <!--mother tongue-->
                             <div class="Form-group">
                                 <label class="label-content" for="mothertongue">Mother's Tongue</label>
-                                <input type="text" id="motherfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="motherfield" placeholder="Enter Here" class="input-content" />
                             </div>
                             <!--nationality-->
                             <div class="Form-group">
@@ -116,14 +110,12 @@
                             <!--marital status-->
                             <div class="Form-group">
                                 <label class="label-content" for="maritalfield">Marital Status</label>
-                                <input type="text" id="maritalfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="maritalfield" placeholder="Enter Here" class="input-content" />
                             </div>
                             <!--passport-->
                             <div class="Form-group">
                                 <label class="label-content" for="passportfield">Passport Details</label>
-                                <input type="text" id="passportfield" placeholder="Enter Here"
-                                    class="input-content" />
+                                <input type="text" id="passportfield" placeholder="Enter Here" class="input-content" />
                             </div>
                         </div>
                     </div>
@@ -135,8 +127,7 @@
                                 <div class="contact">
                                     <!--phone number-->
                                     <label class="label-content" for="phonefield">Phone Number</label>
-                                    <input type="text" id="phonefield" placeholder="Enter Here"
-                                        class="input-content" />
+                                    <input type="text" id="phonefield" placeholder="Enter Here" class="input-content" />
                                 </div>
                                 <!--email-->
                                 <div class="contact">
@@ -176,11 +167,9 @@
                                     <input type="text" id="clgnamefield" placeholder="Enter Here"
                                         class="input-content" />
                                     <label class="label-content" for="studyfield">Field of Study</label>
-                                    <input type="text" id="studyfield" placeholder="Enter Here"
-                                        class="input-content" />
+                                    <input type="text" id="studyfield" placeholder="Enter Here" class="input-content" />
                                     <label class="label-content" for="scorefield">Percentage Scored</label>
-                                    <input type="text" id="scorefield" placeholder="Enter Here"
-                                        class="input-content" />
+                                    <input type="text" id="scorefield" placeholder="Enter Here" class="input-content" />
                                     <label class="label-content" for="gradfield">Graduation Year</label>
                                     <input type="text" id="gradfield" placeholder="for ex: 2018-22"
                                         class="input-content" />
@@ -251,8 +240,12 @@
                                     <label class="label-content" for="detailfield1">Details</label>
                                     <input type="text" id="detailfield1" placeholder="Achievements/Task/Responsibility "
                                         class="input-content" />
-                                    <button class="button button5"  onclick="addInternship()">Add Internship</button>
-                                    <button class="button button5"  onclick="removeInternship()">Remove Internship</button>
+                                    <div class="add-remove-container mt-3 mb-3">
+                                        <button class="button button5 add-button" onclick="addInternship()">Add
+                                            Internship</button>
+                                        <button class="button button5 remove-button" onclick="removeInternship()">Remove
+                                            Internship</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -276,10 +269,14 @@
                                     <input type="date" id="trn_edatefield1" placeholder="Enter Here"
                                         class="input-content" />
                                     <label class="label-content" for="trn_detailfield1">Details</label>
-                                    <input type="text" id="trn_detailfield1" placeholder="Achievements/Task/Responsibility "
-                                        class="input-content" />
-                                    <button class="button button5"  onclick="addTraining()">Add Training</button>
-                                    <button class="button button5"  onclick="removeTraining()">Remove Training</button>
+                                    <input type="text" id="trn_detailfield1"
+                                        placeholder="Achievements/Task/Responsibility " class="input-content" />
+                                    <div class="add-remove-container mt-3 mb-3">
+                                        <button class="button button5 add-button" onclick="addTraining()">Add
+                                            Training</button>
+                                        <button class="button button5 remove-button" onclick="removeTraining()">Remove
+                                            Training</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -300,12 +297,15 @@
                                     <input type="date" id="pro_eddatefield1" placeholder="Enter Here"
                                         class="input-content" />
                                     <label class="label-content" for="pro_detailpfield1">Details</label>
-                                    <input type="text" id="pro_detailpfield1" placeholder="Achievements/Task/Responsibility "
-                                        class="input-content" />
+                                    <input type="text" id="pro_detailpfield1"
+                                        placeholder="Achievements/Task/Responsibility " class="input-content" />
                                 </div>
                             </div>
-                            <button class="button button5"  onclick="addProject()">Add Project</button>
-                            <button class="button button5"  onclick="removeProject()">Remove Project</button>
+                            <div class="add-remove-container mt-3 mb-3">
+                                <button class="button button5 add-button" onclick="addProject()">Add Project</button>
+                                <button class="button button5 remove-button" onclick="removeProject()">Remove
+                                    Project</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Other Details Column 1 -->
@@ -324,7 +324,10 @@
                                         class="input-content" />
                                 </div>
                             </div>
-                            <button class="button button5"  onclick="addAchievement(this)">Add Achievement</button>
+                            <div class="archi-container mt-3 mb-3">
+                                <button class="button button5 archi-button" onclick="addAchievement(this)">Add
+                                    Achievement</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Other Details Column 2 -->
@@ -371,7 +374,9 @@
                             </div>
                         </div>
                         <!-- generate button -->
-                        <button onclick="generator()">Generate</button>
+                        <div class="generator-container mt-3 mb-3">
+                            <button class="generator-button" onclick="generator()">Generate</button>
+                        </div>
                     </div>
 
                 </div>
@@ -391,11 +396,12 @@
         crossorigin="anonymous"></script>
 
     <!-- JQUERY CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <!-- JSPDF CDN -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-    
+
     <!-- HTML2CANVAS CDN -->
     <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
