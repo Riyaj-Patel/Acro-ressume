@@ -24,7 +24,7 @@ function resizeFont() {
     let totalleftHeight = $('#left').height() + $('#top').height();
     let totalrightHeight = $('#right').height() + $('#top').height();
     let alltextNodes = $('#page p,#page h2,#page h4');
-    let allUnderlineNodes = $('#page p');
+    let allUnderlineNodes = $('#page u');
 
     while(pageHeight<totalleftHeight || pageHeight<totalrightHeight) {
         
@@ -32,8 +32,6 @@ function resizeFont() {
             let fontSize = parseInt($(alltextNodes[i]).css('font-size'));
             $(alltextNodes[i]).css('font-size',fontSize*.99);
         }
-
-        $('#page ol').css('font-size',fontSize*.99);
 
         for (let i = 0; i < allUnderlineNodes.length; i++) {
             let underLineSize = parseInt($(allUnderlineNodes[i]).css('text-decoration-thickness'));
@@ -43,6 +41,8 @@ function resizeFont() {
         totalleftHeight = $('#left').height() + $('#top').height();
         totalrightHeight = $('#right').height() + $('#top').height();
     }
+
+    $('#page ol').css('font-size',$('#page ol p').css('font-size'))
 }
 
 function CreatePDFfromHTML() {
@@ -61,8 +61,3 @@ function CreatePDFfromHTML() {
         pdf.save("RESUME.pdf");
     });
 }
-
-$(document).ready(()=>{
-    resizePage();
-    resizeFont();
-})
