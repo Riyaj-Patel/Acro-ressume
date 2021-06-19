@@ -166,13 +166,14 @@ function addProject(){
                                             <input type="date" id="pro_eddatefield${totalProjects+1}" placeholder="Enter Here"
                                                 class="input-content" />
                                             <label class="label-content" for="pro_detailpfield${totalProjects+1}">Details</label>
-                                            <input type="text" id="pro_detailpfield${totalProjects+1}" placeholder="Achievements/Task/Responsibility "
-                                                class="input-content" />
+                                            <input type="text" id="pro_detailpfield${totalProjects+1}"
+                                                placeholder="Achievements/Task/Responsibility " class="input-content" />
+                                            <div class="add-remove-container mt-3 mb-3">
+                                                <button class="button button5 add-button" onclick="addProject()">Add Project</button>
+                                                <button class="button button5 remove-button" onclick="removeProject()">Remove
+                                                    Project</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="add-remove-container mt-3 mb-3"
-                                    <button class="button button5 add-button"  onclick="addProject()">Add Project</button>
-                                    <button class="button button5 remove-button"  onclick="removeProject()">Remove Project</button>
                                     </div>
                                 </div>
                             </div>`;
@@ -222,14 +223,14 @@ function addAchievement(el) {
     
     // adding achievement if no. of achievements less than 2
     if(totalAchievements<2){
-        $(el).after(`<div class="Form-group">
+        $(el).parent('.archi-container').after(`<div class="Form-group">
                         <div class="achievement">
                             <label class="label-content" for="achievefield2">Achievement 2</label>
                             <input type="text" id="achievefield2" placeholder="Enter Here"
                                                                     class="input-content" />
                         </div>
                     </div>
-                    <div class="archi-container">
+                    <div class="archi-container mt-3 mb-3">
                     <button class="button button5 archi-button"  onclick="removeAchievement(this)">Remove</button>
                     </div>`);
                     
@@ -240,8 +241,8 @@ function addAchievement(el) {
 };
 
 function removeAchievement(el){
-    $(el).prev('.Form-group').remove();
-    $(el).remove();
+    $(el).parent('.archi-container').prev('.Form-group').remove();
+    $(el).parent('.archi-container').remove();
 };
 
 function generator() {
